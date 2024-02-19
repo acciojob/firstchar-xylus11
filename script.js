@@ -6,9 +6,9 @@ function firstChar(text) {
         return ch;
       }
     }
-    return " "; // If the text contains only spaces
+    return ""; // If the text contains only spaces
   } else {
-    return " "; // If the text is empty
+    return ""; // If the text is empty
   }
 }
 
