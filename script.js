@@ -1,32 +1,17 @@
 function firstChar(text) {
-  // your code here
-	if(text)
-	{
-	const ch = text.charAt(0);
-		let i=0 ;
-
-		
-	if(ch==" ")
-	{
-		i++;
-		if(i>0)
-		{
-			return text.charAt(i);
-			
-		}
-	}
-	else{
-		return ch;
-	}
-	
-}
-	else
-	{
-		return " ";
-	}
+  if (text) {
+    for (let i = 0; i < text.length; i++) {
+      const ch = text.charAt(i);
+      if (ch !== " ") {
+        return ch;
+      }
+    }
+    return " "; // If the text contains only spaces
+  } else {
+    return " "; // If the text is empty
+  }
 }
 
-// Do not change the code below
-
+// Example usage:
 const text = prompt("Enter text:");
 alert(firstChar(text));
